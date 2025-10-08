@@ -1,0 +1,109 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(160deg, #ffe5f5, #fff0f7);
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(90deg, #ff9ec3, #ff5fa2);
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+nav a:hover {
+  opacity: 0.9;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+/* MUSEUM SECTION */
+.appreciation-museum {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+.appreciation-museum h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  text-align: center;
+  color: #ff4f8b;
+  margin-bottom: 60px;
+}
+
+/* Memory entries */
+.memory {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  gap: 40px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out;
+}
+
+.memory img {
+  width: 45%;
+  border-radius: 20px;
+  transform: rotate(-2deg);
+  box-shadow: 0 15px 35px rgba(255,100,180,0.2);
+}
+
+.memory-text {
+  width: 50%;
+}
+
+.memory-text h3 {
+  font-family: 'Pacifico', cursive;
+  color: #ff4f8b;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.memory-text p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Reverse layout for alternate entries */
+.memory.reverse {
+  flex-direction: row-reverse;
+}
+
+.memory.reverse img {
+  transform: rotate(2deg);
+}
+
+/* Fade-in on scroll */
+.memory.show {
+  opacity: 1;
+  transform: translateY(0);
+}

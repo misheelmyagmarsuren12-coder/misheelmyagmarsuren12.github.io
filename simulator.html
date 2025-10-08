@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friendship Simulator</title>
+  <link rel="stylesheet" href="css/simulator.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>MOLLY BIRTHDAY 🎉</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="museum.html">Museum</a></li>
+        <li><a href="simulator.html">Simulator</a></li>
+        <li><a href="letter.html">Letters</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SIMULATOR SECTION -->
+  <section class="simulator">
+    <h2>🎮 Friendship Simulator</h2>
+    <p class="sim-intro">Interact with Molly! Give her cake, compliments, or memes and watch her react. 🥰</p>
+
+    <div class="sim-container">
+      <img src="images/smiling.png" height="200px" width="100px" alt="Molly smiling" class="molly-pic">
+
+      <div class="buttons">
+        <button id="cake-btn">🍰 Give Cake</button>
+        <button id="compliment-btn">💖 Compliment</button>
+        <button id="meme-btn">🐸 Funny</button>
+      </div>
+
+      <div id="popup-text" class="popup"></div>
+    </div>
+  </section>
+
+  <!-- Optional: Audio -->
+  <audio id="cake-sound" src="images/nom.mp3"></audio>
+  <audio id="compliment-sound" src="images/rizz.mp3"></audio>
+  <audio id="meme-sound" src="images/pluh.mp3"></audio>
+
+  <script src="js/simulator.js"></script>
+</body>
+</html>
